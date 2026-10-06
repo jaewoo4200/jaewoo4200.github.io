@@ -1,0 +1,749 @@
+[
+  {
+    "id": "seam",
+    "title": {
+      "en": "SEAM Studio",
+      "ko": "SEAM Studio"
+    },
+    "year": "2026",
+    "category": {
+      "en": "3D authoring · Research software",
+      "ko": "3D 편집 · 연구 소프트웨어"
+    },
+    "summary": {
+      "en": "A 3D workspace for assigning materials and inspecting radio simulations.",
+      "ko": "재질을 편집하고 전파 시뮬레이션을 확인하는 3D 작업 공간."
+    },
+    "cover": "seam.jpg",
+    "coverAlt": {
+      "en": "SEAM Studio scene editor and radio analysis panels",
+      "ko": "SEAM Studio 장면 편집기와 전파 분석 패널"
+    },
+    "role": {
+      "en": "Scene editor, material workflow & simulation interface",
+      "ko": "장면 편집기, 재질 작업 흐름, 시뮬레이션 인터페이스"
+    },
+    "stack": "Python · FastAPI · React · Three.js · Sionna RT",
+    "lead": {
+      "en": "A mesh can look right and still be incomplete for radio simulation. SEAM gives each object separate visual and electromagnetic materials, then brings simulation results back into the same scene.",
+      "ko": "3D 메시의 외관이 정확해 보여도 전파 시뮬레이션에 필요한 정보는 빠져 있을 수 있습니다. SEAM에서는 객체마다 시각 재질과 전자기 재질을 따로 지정하고 시뮬레이션 결과를 같은 장면에서 확인합니다."
+    },
+    "gallery": [
+      {
+        "src": "seam.jpg",
+        "caption": {
+          "en": "The SEAM workbench: scene, material controls and channel-analysis panels.",
+          "ko": "SEAM 작업 화면: 3D 장면, 재질 설정, 채널 분석 패널."
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "value": "2",
+        "label": {
+          "en": "material bindings per object",
+          "ko": "객체별 재질 속성"
+        }
+      },
+      {
+        "value": "5",
+        "label": {
+          "en": "workspace modes",
+          "ko": "작업 모드"
+        }
+      },
+      {
+        "value": "Mock / RT",
+        "label": {
+          "en": "simulation backends",
+          "ko": "시뮬레이션 백엔드"
+        }
+      }
+    ],
+    "process": [
+      {
+        "title": {
+          "en": "Build the scene",
+          "ko": "장면 구성"
+        },
+        "body": {
+          "en": "Import a 3D scene and place transmitters and receivers in the viewport. Visual materials control appearance; RF materials control how the scene interacts with radio waves.",
+          "ko": "3D 장면을 가져오고 뷰포트에서 송수신기를 배치합니다. 시각 재질은 외관을, RF 재질은 전파와 장면의 상호작용을 결정합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Review material assignments",
+          "ko": "재질 할당 검토"
+        },
+        "body": {
+          "en": "Rules and optional AI assistance propose materials. Suggestions pass format and allowed-material checks, and the user reviews them before applying them. The scene records the source and confirmation state of an assignment.",
+          "ko": "규칙과 선택적인 AI 보조 기능이 재질을 제안합니다. 형식과 허용 재질 목록을 검사한 뒤 사용자가 검토하여 적용합니다. 장면에는 재질 할당의 출처와 확정 상태를 기록합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Inspect radio results",
+          "ko": "전파 결과 확인"
+        },
+        "body": {
+          "en": "Compile the RF scene for Sionna RT and inspect paths, radio maps and channel-response plots alongside the geometry. The Mock backend supports demonstrations without the real ray-tracing engine.",
+          "ko": "RF 장면을 Sionna RT용으로 변환하고 전파 경로, 라디오맵, 채널 응답을 형상과 함께 확인합니다. 실제 레이 트레이싱 엔진이 없는 환경에서는 Mock 백엔드로 작업 흐름을 살펴볼 수 있습니다."
+        }
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "My work",
+          "ko": "담당한 작업"
+        },
+        "body": {
+          "en": "I built the editor and the workflow connecting scene objects, material assignments, validation and result panels. Keeping visual and RF properties separate makes it possible to revise a simulation assumption without changing the rendered appearance.",
+          "ko": "편집기와 장면 객체·재질 할당·검증·결과 패널을 연결하는 작업 흐름을 구현했습니다. 시각 속성과 RF 속성을 분리해 렌더링 외관을 유지하면서 시뮬레이션의 가정을 수정할 수 있게 했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Research connection",
+          "ko": "연구와의 연결"
+        },
+        "body": {
+          "en": "The material-impact comparison relates to my KICS 2026 paper: it compares a scene with identified materials against a single-material baseline. Mock outputs and real Sionna results remain distinguishable.",
+          "ko": "재질을 식별한 장면과 단일 재질 기준 장면을 비교하는 기능은 KICS 2026 논문과 연결됩니다. Mock 출력과 실제 Sionna 결과는 구분해 다룹니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://jaewoo4200.github.io/SEAM/",
+        "label": {
+          "en": "Project website",
+          "ko": "프로젝트 웹사이트"
+        }
+      },
+      {
+        "url": "https://github.com/jaewoo4200/SEAM",
+        "label": {
+          "en": "GitHub",
+          "ko": "GitHub"
+        }
+      }
+    ],
+    "source": {
+      "en": "Based on the project README and September 2026 portfolio.",
+      "ko": "프로젝트 README와 2026년 9월 포트폴리오 기준."
+    }
+  },
+  {
+    "id": "campus",
+    "title": {
+      "en": "Hanyang, in 3D",
+      "ko": "한양대학교, 3D로"
+    },
+    "year": "2026",
+    "category": {
+      "en": "Spatial web · 3D modelling",
+      "ko": "공간 웹 · 3D 모델링"
+    },
+    "summary": {
+      "en": "Two campuses, building information, and walking routes shaped by the terrain.",
+      "ko": "두 캠퍼스의 건물 정보와 지형을 반영한 보행 경로를 웹에서."
+    },
+    "cover": "campus.jpg",
+    "coverAlt": {
+      "en": "A 3D map of Hanyang University Seoul campus",
+      "ko": "한양대학교 서울캠퍼스 3D 지도"
+    },
+    "role": {
+      "en": "Data pipeline, modelling rules, review & web interface",
+      "ko": "데이터 처리, 모델 생성 규칙, 검토, 웹 인터페이스"
+    },
+    "stack": "Three.js · Blender · Python · Vite · GLB · A*",
+    "lead": {
+      "en": "This project brings Hanyang’s Seoul and ERICA campuses into a browser. I worked on the path from source photographs and spatial data to building models, a navigable map, and terrain-aware walking routes.",
+      "ko": "한양대학교 서울·ERICA 캠퍼스를 브라우저에서 탐색하는 프로젝트입니다. 원본 사진과 공간 데이터에서 건물 모델, 웹 지도, 지형을 고려한 보행 경로로 이어지는 과정을 설계했습니다."
+    },
+    "gallery": [
+      {
+        "src": "campus.jpg",
+        "caption": {
+          "en": "Seoul campus in the browser-based 3D map.",
+          "ko": "브라우저에서 탐색하는 서울캠퍼스 3D 지도."
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "value": "2",
+        "label": {
+          "en": "campuses",
+          "ko": "캠퍼스"
+        }
+      },
+      {
+        "value": "3,680",
+        "label": {
+          "en": "Seoul walking-graph edges",
+          "ko": "서울 보행 그래프 구간"
+        }
+      },
+      {
+        "value": "140.7 → 35.0 MB",
+        "label": {
+          "en": "Seoul GLB pack after meshopt",
+          "ko": "meshopt 압축 전후 서울 GLB 팩"
+        }
+      }
+    ],
+    "process": [
+      {
+        "title": {
+          "en": "From reconstruction to modelling",
+          "ko": "복원에서 모델링으로"
+        },
+        "body": {
+          "en": "I first explored 3D Gaussian Splatting. The captured aerial views did not recover enough of the façades and entrances at pedestrian height, so I moved to generating buildings from photographs and written specifications.",
+          "ko": "처음에는 3D Gaussian Splatting으로 복원을 시도했습니다. 항공 시점 자료만으로는 보행자 높이의 벽면과 입구를 충분히 복원하기 어려워 사진과 명세를 바탕으로 건물을 생성하는 방식으로 전환했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Make generated geometry reviewable",
+          "ko": "생성 모델의 검토 기준"
+        },
+        "body": {
+          "en": "I designed rules for source records, footprint coordinates, building dimensions and visual review. Agents wrote modelling code; I defined the checks and reviewed the results. Unobserved details were recorded as assumptions.",
+          "ko": "출처 기록, 외곽선 좌표, 건물 규모, 시각 검토 규칙을 설계했습니다. 에이전트가 모델링 코드를 작성하고 저는 검사 기준을 정해 결과를 검토했습니다. 관측하지 못한 부분은 추정으로 기록했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Bring it into the browser",
+          "ko": "브라우저로 옮기기"
+        },
+        "body": {
+          "en": "The web map combines building search, information and 3D navigation. Seoul walking routes include terrain slope; meshopt compression reduced the GLB pack to make the models lighter to load.",
+          "ko": "웹 지도에 건물 검색, 정보, 3D 탐색을 결합했습니다. 서울 보행 경로에 지형 경사를 반영하고 meshopt로 GLB 팩을 압축해 모델 용량을 줄였습니다."
+        }
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "What I contributed",
+          "ko": "담당한 작업"
+        },
+        "body": {
+          "en": "I designed the data-processing and model-generation workflow, the review rules and the web interface. The project combines generated buildings with external spatial data and models; not every object in the map was modelled by me.",
+          "ko": "데이터 처리와 모델 생성 과정, 검토 규칙, 웹 인터페이스를 설계했습니다. 직접 생성한 건물과 외부 공간 데이터·모델을 함께 활용하며 지도 속 모든 객체를 직접 모델링한 것은 아닙니다."
+        }
+      },
+      {
+        "title": {
+          "en": "What the numbers describe",
+          "ko": "평가 범위"
+        },
+        "body": {
+          "en": "The figures above are from my September 2026 portfolio. They describe the Seoul walking graph and model pack. ERICA walking routes did not include slope at that point, and these models have not been evaluated as a survey-grade reconstruction.",
+          "ko": "위 수치는 2026년 9월 포트폴리오의 서울 보행 그래프와 모델 팩 기준입니다. 당시 ERICA 보행 경로에는 경사가 반영되지 않았고 전체 모델을 측량 수준의 복원으로 검증한 것은 아닙니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://hyu-campus.ljw.app/",
+        "label": {
+          "en": "Explore the map",
+          "ko": "웹 지도 보기"
+        }
+      }
+    ],
+    "source": {
+      "en": "Project process and measurements: September 2026 3D portfolio.",
+      "ko": "제작 과정과 수치: 2026년 9월 3D 포트폴리오."
+    }
+  },
+  {
+    "id": "capstone",
+    "title": {
+      "en": "A view above the intersection",
+      "ko": "교차로 위의 시선"
+    },
+    "year": "2025–26",
+    "category": {
+      "en": "Capstone · Computer vision · Team of three",
+      "ko": "캡스톤 · 컴퓨터비전 · 3인 팀"
+    },
+    "summary": {
+      "en": "Drone video, accident detection and a working traffic-light prototype.",
+      "ko": "드론 영상의 사고 판단부터 실제 신호등 모형 제어까지."
+    },
+    "cover": "traffic.jpg",
+    "coverAlt": {
+      "en": "Scale-model intersection used in the capstone experiment",
+      "ko": "캡스톤 실험에 사용한 축소 교차로"
+    },
+    "role": {
+      "en": "Dataset, detection & tracking, accident logic, dashboard and integration",
+      "ko": "데이터셋, 탐지·추적, 사고 판단, 관제 UI, 시스템 통합"
+    },
+    "stack": "YOLO26s · ByteTrack · Raspberry Pi · Web UI · UART / FPGA",
+    "lead": {
+      "en": "Our team built a prototype that watches an intersection from above, detects possible accidents, and sends a signal to a traffic-light controller. We tested the complete path on a scale-model intersection, from camera input to the lights turning red.",
+      "ko": "교차로를 상공에서 관찰하고 사고 가능성을 판단해 신호등 제어부로 전달하는 프로토타입을 만들었습니다. 축소 교차로에서 카메라 입력부터 적색 신호 출력까지 전체 흐름을 검증했습니다."
+    },
+    "gallery": [
+      {
+        "src": "capstone-dashboard.webp",
+        "caption": {
+          "en": "Dashboard detail: detections, a 2D scene and the event log. Full-system latency was measured separately.",
+          "ko": "관제 화면 상세: 객체 탐지, 2D 장면, 이벤트 로그. 종단 간 지연은 별도로 측정했습니다."
+        }
+      },
+      {
+        "src": "traffic.jpg",
+        "caption": {
+          "en": "The scale-model intersection and traffic lights used for the demonstration.",
+          "ko": "시연에 사용한 축소 교차로와 신호등."
+        }
+      },
+      {
+        "src": "capstone-rig.webp",
+        "caption": {
+          "en": "A fixed overhead rig kept the scene stable during repeated tests.",
+          "ko": "반복 실험에서 장면을 안정적으로 유지하기 위한 상공 고정 구조물."
+        }
+      },
+      {
+        "src": "capstone-drone.webp",
+        "caption": {
+          "en": "The drone platform assembled for the capstone project.",
+          "ko": "캡스톤 프로젝트에서 제작한 드론 플랫폼."
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "value": "13,248",
+        "label": {
+          "en": "labelled images · 6 classes",
+          "ko": "라벨링 이미지 · 6개 클래스"
+        }
+      },
+      {
+        "value": "0.940",
+        "label": {
+          "en": "test mAP50–95",
+          "ko": "테스트 mAP50–95"
+        }
+      },
+      {
+        "value": "≈ 3.7 s",
+        "label": {
+          "en": "end-to-end demo latency",
+          "ko": "시연 종단 간 지연"
+        }
+      }
+    ],
+    "process": [
+      {
+        "title": {
+          "en": "Capture",
+          "ko": "영상 입력"
+        },
+        "body": {
+          "en": "A Raspberry Pi camera sends the overhead video to the AI server over a TCP/IP MPEG-TS stream. A fixed rig replaced free flight during repeated tests because propeller downwash moved the miniature cars and road pieces.",
+          "ko": "라즈베리파이 카메라의 상공 영상을 TCP/IP MPEG-TS로 AI 서버에 전달합니다. 반복 실험에서는 프로펠러 하강기류가 차량과 도로 모형을 움직이는 문제를 해결하기 위해 비행 대신 고정 구조물을 사용했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Detect & track",
+          "ko": "탐지와 추적"
+        },
+        "body": {
+          "en": "YOLO26s detects four vehicle classes, people and fire. ByteTrack maintains object IDs between frames, including lower-confidence detections that can help retain a track when a small object is partially hidden.",
+          "ko": "YOLO26s가 차량 4종, 사람, 화재를 탐지하고 ByteTrack이 프레임 사이의 객체 ID를 유지합니다. 낮은 신뢰도의 탐지 결과도 활용해 작은 객체가 일부 가려졌을 때의 추적 연속성을 보완합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Decide",
+          "ko": "사고 판단"
+        },
+        "body": {
+          "en": "The logic checks vehicle–vehicle, vehicle–person and vehicle–fire relationships using bounding-box overlap and proximity. A candidate must persist over time before it becomes an accident event.",
+          "ko": "바운딩 박스의 겹침과 근접 관계로 차대차, 차량·보행자, 차량·화재 상황을 검사합니다. 사고 후보가 일정 시간 지속될 때 이벤트로 확정해 순간적인 오검출을 줄입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Monitor",
+          "ko": "관제 화면"
+        },
+        "body": {
+          "en": "The web dashboard combines a live detection overlay, a 2D scene and time-ordered events. Detection thresholds can be adjusted while inspecting the camera feed and the resulting event decisions.",
+          "ko": "웹 대시보드에서 실시간 탐지 결과, 2D 장면, 시간순 이벤트를 함께 봅니다. 카메라 영상과 사고 판단을 확인하면서 탐지 임계값을 조정할 수 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Respond",
+          "ko": "하드웨어 연동"
+        },
+        "body": {
+          "en": "The AI server sends an accident signal over UART. The teammate-built FPGA controller enters its accident state and holds both directions red; the demonstration also checks return to normal operation.",
+          "ko": "AI 서버가 UART로 사고 신호를 보냅니다. 팀원이 구현한 FPGA 제어부가 사고 상태로 전환해 양방향 적색 신호를 유지하며 시연에서는 정상 상태로 복귀하는 흐름도 확인했습니다."
+        }
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Building the dataset",
+          "ko": "데이터셋 구성"
+        },
+        "body": {
+          "en": "I collected and labelled the intersection images. The six-class dataset contains 10,598 training, 1,326 validation and 1,324 test images. A burst-aware split keeps near-identical frames from the same short capture sequence together, reducing overlap between training and evaluation data.",
+          "ko": "교차로 영상을 직접 촬영하고 라벨링했습니다. 6개 클래스의 데이터는 학습 10,598장, 검증 1,326장, 테스트 1,324장입니다. 연속 촬영한 유사 프레임이 학습·평가 데이터에 섞이지 않도록 촬영 시각을 기준으로 묶어 분할했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Evaluation and the bottleneck",
+          "ko": "평가와 병목"
+        },
+        "body": {
+          "en": "Validation mAP50–95 improved from 0.717 with YOLOv8n to 0.932 with YOLO26s. The final test result was 0.940. In the demonstration, video transmission contributed roughly 3,000 ms of the approximately 3.7-second response; decoding and YOLO processing took about 30 ms. Improving inference alone would leave the main delay unresolved.",
+          "ko": "검증 mAP50–95는 YOLOv8n의 0.717에서 YOLO26s의 0.932로 개선됐고 최종 테스트 결과는 0.940이었습니다. 약 3.7초의 시연 응답 시간 중 영상 전송이 약 3,000 ms를 차지했고 디코딩·YOLO 처리는 약 30 ms였습니다. 전체 응답을 개선하려면 추론뿐 아니라 전송 지연을 줄여야 했습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "My contribution, and the scope",
+          "ko": "나의 기여와 실험 범위"
+        },
+        "body": {
+          "en": "I handled data capture and labelling, detection and tracking, accident logic, the monitoring UI and system integration. A teammate implemented the FPGA controller. The results are from a scale-model testbed with staged accident scenarios; real-road performance was not measured.",
+          "ko": "데이터 촬영·라벨링, 탐지·추적, 사고 판단, 관제 UI, 시스템 통합을 담당했습니다. FPGA 내부 제어는 팀원이 구현했습니다. 결과는 사고 상황을 재현한 축소 도로 실험이며 실제 도로에서의 성능을 측정한 것은 아닙니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://github.com/jaewoo4200/hyu-capstone-uav-webui",
+        "label": {
+          "en": "Dashboard source",
+          "ko": "관제 UI 소스"
+        }
+      }
+    ],
+    "source": {
+      "en": "Based on the May 2026 final presentation, final report and personal portfolio.",
+      "ko": "2026년 5월 최종 발표자료, 결과보고서, 개인 포트폴리오 기준."
+    }
+  },
+  {
+    "id": "claudeusage",
+    "title": {
+      "en": "Claude + Codex Usage",
+      "ko": "Claude + Codex Usage"
+    },
+    "year": "2026",
+    "category": {
+      "en": "macOS app · SwiftUI · Open source",
+      "ko": "macOS 앱 · SwiftUI · 오픈소스"
+    },
+    "summary": {
+      "en": "Usage limits and reset times, kept within reach in the menu bar.",
+      "ko": "사용량과 초기화 시간을 메뉴바와 위젯에서 한눈에."
+    },
+    "cover": "claudeusage-widget.webp",
+    "coverAlt": {
+      "en": "Claude and Codex usage widget with demo data",
+      "ko": "데모 데이터로 표시한 Claude·Codex 사용량 위젯"
+    },
+    "role": {
+      "en": "macOS application, widgets & usage views",
+      "ko": "macOS 앱, 위젯, 사용량 화면"
+    },
+    "stack": "Swift · SwiftUI · macOS",
+    "lead": {
+      "en": "I made a menu-bar app that puts Claude and Codex usage limits in one place. A floating widget keeps the current limits and reset countdowns visible while working in other apps.",
+      "ko": "Claude와 Codex의 사용량 한도를 한곳에서 보는 메뉴바 앱을 만들었습니다. 다른 앱에서 작업할 때도 플로팅 위젯으로 현재 사용량과 초기화까지 남은 시간을 확인할 수 있습니다."
+    },
+    "gallery": [
+      {
+        "src": "claudeusage-widget.webp",
+        "caption": {
+          "en": "Floating widget with demo data, weekly breakdown and the Mimo companion.",
+          "ko": "데모 데이터, 주간 사용 내역, Mimo 캐릭터가 표시된 플로팅 위젯."
+        }
+      },
+      {
+        "src": "claudeusage-dropdown.webp",
+        "caption": {
+          "en": "The menu-bar dropdown, shown with demo data.",
+          "ko": "데모 데이터가 표시된 메뉴바 드롭다운."
+        }
+      },
+      {
+        "src": "claudeusage-history.webp",
+        "caption": {
+          "en": "Optional local usage history and a time-series graph.",
+          "ko": "선택적으로 저장하는 로컬 사용 이력과 시계열 그래프."
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "value": "2",
+        "label": {
+          "en": "services in one view",
+          "ko": "한 화면의 서비스"
+        }
+      },
+      {
+        "value": "4",
+        "label": {
+          "en": "widget layouts",
+          "ko": "위젯 레이아웃"
+        }
+      },
+      {
+        "value": "EN / KO",
+        "label": {
+          "en": "interface languages",
+          "ko": "인터페이스 언어"
+        }
+      }
+    ],
+    "process": [],
+    "sections": [
+      {
+        "title": {
+          "en": "Designed for a quick glance",
+          "ko": "짧게 확인하는 화면"
+        },
+        "body": {
+          "en": "The menu-bar view and floating widgets show usage gauges and reset countdowns for both services. Four layouts and three themes accommodate different amounts of available screen space.",
+          "ko": "메뉴바와 플로팅 위젯에서 두 서비스의 사용량과 초기화 시간을 확인합니다. 화면 공간에 맞춰 선택할 수 있도록 네 가지 레이아웃과 세 가지 테마를 제공합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "More context when needed",
+          "ko": "사용 흐름 살펴보기"
+        },
+        "body": {
+          "en": "The app can keep a local history and display up to 14 days in a graph. A weekly Claude breakdown and selectable animated companions provide additional views of usage. The screenshots here use demo values, not live account usage.",
+          "ko": "로컬에 사용 이력을 저장하고 최대 14일을 그래프로 살펴볼 수 있습니다. Claude의 주간 사용 내역과 선택 가능한 애니메이션 캐릭터도 제공합니다. 이 페이지의 앱 화면은 실제 계정 사용량 대신 데모 값을 표시합니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://github.com/jaewoo4200/ClaudeUsage",
+        "label": {
+          "en": "GitHub",
+          "ko": "GitHub"
+        }
+      },
+      {
+        "url": "https://github.com/jaewoo4200/ClaudeUsage/releases",
+        "label": {
+          "en": "Releases",
+          "ko": "릴리스"
+        }
+      }
+    ],
+    "source": {
+      "en": "Features and demo screenshots from the public project repository.",
+      "ko": "공개 저장소의 기능 설명과 데모 스크린샷 기준."
+    }
+  },
+  {
+    "id": "vocanote",
+    "title": {
+      "en": "VocaNote",
+      "ko": "VocaNote"
+    },
+    "year": "2026",
+    "category": {
+      "en": "macOS & web · Reading tool",
+      "ko": "macOS·웹 · 읽기 도구"
+    },
+    "summary": {
+      "en": "Look up a word, keep it, and return to it while reading papers.",
+      "ko": "논문을 읽다가 찾은 단어를 모으고 다시 익히는 도구."
+    },
+    "cover": "vocanote-web.webp",
+    "coverAlt": {
+      "en": "VocaNote web interface looking up wireless",
+      "ko": "wireless를 검색한 VocaNote 웹 화면"
+    },
+    "role": {
+      "en": "Lookup interface, vocabulary tools & Mac companion",
+      "ko": "검색 인터페이스, 단어장, Mac 앱"
+    },
+    "stack": "SwiftUI · TypeScript · Web",
+    "lead": {
+      "en": "VocaNote combines English word lookup, technical abbreviations and a personal wordbook. A keyboard-triggered Mac overlay provides quick lookup; the web app provides a place to browse and review vocabulary.",
+      "ko": "VocaNote는 영단어 검색, 기술 약어, 개인 단어장을 연결합니다. Mac에서는 단축키로 검색 창을 열고 웹에서는 모은 단어를 살펴보고 복습할 수 있습니다."
+    },
+    "gallery": [
+      {
+        "src": "vocanote-web.webp",
+        "caption": {
+          "en": "The live web app showing a sample lookup for “wireless”.",
+          "ko": "실제 웹 앱에서 “wireless”를 검색한 예시."
+        }
+      }
+    ],
+    "metrics": [],
+    "process": [
+      {
+        "title": {
+          "en": "Look up",
+          "ko": "검색"
+        },
+        "body": {
+          "en": "Word autocomplete and dictionary meanings support reading English material. Technical abbreviations can be looked up alongside ordinary words.",
+          "ko": "단어 자동완성과 사전 뜻을 활용해 영어 자료를 읽습니다. 일반 단어와 함께 기술 약어도 검색할 수 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Keep & review",
+          "ko": "저장과 복습"
+        },
+        "body": {
+          "en": "Words can be collected in a personal wordbook and revisited through flashcards. The project includes a browser wordbook and account-based synchronization.",
+          "ko": "개인 단어장에 단어를 모으고 플래시카드로 다시 확인합니다. 브라우저 단어장과 계정 기반 동기화 기능을 포함합니다."
+        }
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "A companion to reading",
+          "ko": "읽는 흐름에 맞춘 도구"
+        },
+        "body": {
+          "en": "The native SwiftUI menu-bar app offers a lookup overlay and selected-text translation. The web interface groups history, the wordbook, abbreviations and review into separate views, keeping the definition beside the reading task.",
+          "ko": "SwiftUI 메뉴바 앱에서 검색 오버레이와 선택한 텍스트 번역을 제공합니다. 웹 인터페이스는 검색 이력, 단어장, 약어, 복습을 나누고 검색 결과와 뜻을 함께 볼 수 있게 구성했습니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://voca.ljw.app/",
+        "label": {
+          "en": "Open VocaNote",
+          "ko": "VocaNote 열기"
+        }
+      },
+      {
+        "url": "https://github.com/jaewoo4200/VocaNote",
+        "label": {
+          "en": "View source",
+          "ko": "소스 보기"
+        }
+      }
+    ],
+    "source": {
+      "en": "Features from the project README; web screenshot captured on 6 October 2026.",
+      "ko": "프로젝트 README 기준. 웹 화면은 2026년 10월 6일 촬영."
+    }
+  },
+  {
+    "id": "reconstruct",
+    "title": {
+      "en": "Reconstruct Digital Twin",
+      "ko": "Reconstruct Digital Twin"
+    },
+    "year": "2026",
+    "category": {
+      "en": "Open-source agent skill",
+      "ko": "오픈소스 에이전트 스킬"
+    },
+    "summary": {
+      "en": "A traceable workflow from scans and photographs to a 3D scene.",
+      "ko": "스캔·사진부터 3D 장면까지 근거를 남기는 작업 흐름."
+    },
+    "cover": null,
+    "coverAlt": {
+      "en": "",
+      "ko": ""
+    },
+    "role": {
+      "en": "Workflow, evidence records & export checks",
+      "ko": "워크플로, 근거 기록, 내보내기 검사"
+    },
+    "stack": "Python · Codex · Claude Code · Blender · Sionna",
+    "lead": {
+      "en": "This reusable skill guides a coding agent through reconstructing a space from scans and photographs. It records what was observed, measured, inferred or assumed so the resulting scene can be reviewed and revised.",
+      "ko": "스캔과 사진으로 공간을 복원하는 과정을 코딩 에이전트가 따르도록 만든 재사용 스킬입니다. 관측·측정·추론·가정을 구분해 기록하므로 장면을 검토하고 수정할 수 있습니다."
+    },
+    "gallery": [],
+    "metrics": [],
+    "process": [
+      {
+        "title": {
+          "en": "Record the evidence",
+          "ko": "근거 기록"
+        },
+        "body": {
+          "en": "Record and hash source files before reconstruction. Keep measurements and observations separate from inferred dimensions and modelling assumptions.",
+          "ko": "복원에 앞서 원본 파일과 해시를 기록합니다. 측정·관측 결과를 추정 치수와 모델링 가정에서 분리합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Build and review",
+          "ko": "생성과 검토"
+        },
+        "body": {
+          "en": "Process supported point clouds, review session transforms, and construct a semantic scene with explicit checks before exporting it.",
+          "ko": "지원하는 포인트 클라우드를 처리하고 세션 변환을 검토한 뒤 의미 정보가 있는 장면을 구성합니다. 내보내기 전에 정해진 검사를 수행합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Export with a stated scope",
+          "ko": "범위를 명시한 내보내기"
+        },
+        "body": {
+          "en": "The workflow supports Blender, GLB, OBJ, generic USDC and structural Sionna scene candidates. Format validation is kept separate from runtime validation in the target simulator.",
+          "ko": "Blender, GLB, OBJ, 일반 USDC, 구조 검사를 거친 Sionna 장면 후보를 내보내는 흐름을 제공합니다. 형식 검증과 실제 시뮬레이터 실행 검증을 구분합니다."
+        }
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "What is included",
+          "ko": "포함된 범위"
+        },
+        "body": {
+          "en": "The repository contains the skill and its validation workflow, not real-room scans or ready-made building models. A version-specific NVIDIA AODT adapter is a future integration requirement rather than a bundled executable feature.",
+          "ko": "저장소에는 스킬과 검증 흐름이 들어 있으며 실제 공간 스캔이나 완성된 건물 모델은 포함하지 않습니다. 버전별 NVIDIA AODT 어댑터는 향후 연계 요구사항으로 실행 기능이 번들된 상태는 아닙니다."
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://github.com/jaewoo4200/reconstruct-digital-twin-skill",
+        "label": {
+          "en": "GitHub & documentation",
+          "ko": "GitHub·문서"
+        }
+      }
+    ],
+    "source": {
+      "en": "Based on the public skill repository and its documented validation scope.",
+      "ko": "공개 스킬 저장소와 문서화된 검증 범위 기준."
+    }
+  }
+]

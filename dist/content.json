@@ -1,0 +1,430 @@
+{
+  "navabout": {
+    "ko": "소개",
+    "en": "About"
+  },
+  "navresearch": {
+    "ko": "연구",
+    "en": "Research"
+  },
+  "navwork": {
+    "ko": "프로젝트",
+    "en": "Projects"
+  },
+  "navbackground": {
+    "ko": "경력과 학력",
+    "en": "Background"
+  },
+  "navcontact": {
+    "ko": "연락",
+    "en": "Contact"
+  },
+  "seamdh0": {
+    "ko": "문제",
+    "en": "Problem"
+  },
+  "seamdb0": {
+    "ko": "복원한 메시를 전파 분석에 사용하려면 형상 외에 표면의 전자기 재질을 지정해야 합니다. 장면 편집과 재질 할당, 시뮬레이션이 분리된 작업 흐름을 연결했습니다.",
+    "en": "A reconstructed mesh needs electromagnetic material assignments before it can be used for radio analysis. I put scene editing, material assignment, and simulation in the same tool."
+  },
+  "seamdh1": {
+    "ko": "나의 기여",
+    "en": "My contribution"
+  },
+  "seamdb1": {
+    "ko": "FastAPI와 React·TypeScript·Three.js 기반 편집 도구를 구현했습니다. AI가 제안한 재질은 구조와 허용 목록을 검사하고 사용자가 검토한 뒤 적용하도록 설계했습니다.",
+    "en": "I wrote the editor with FastAPI, React, TypeScript, and Three.js. The tool checks the format of AI material suggestions and whether they use allowed materials. Users review suggestions before applying them."
+  },
+  "seamdh2": {
+    "ko": "설계 원칙",
+    "en": "Design choices"
+  },
+  "seamdb2": {
+    "ko": "시각적 외관과 RF 재질을 구분하고 재질 할당의 근거와 확정 상태를 기록합니다. Mock와 실제 Sionna 백엔드 결과를 구분해 다룹니다.",
+    "en": "The scene stores visual and RF materials separately, along with the source and confirmation status of each assignment. Results are identified by whether they came from the Mock backend or Sionna."
+  },
+  "seamlink0": {
+    "ko": "프로젝트 소개",
+    "en": "Project website"
+  },
+  "seamlink1": {
+    "ko": "GitHub",
+    "en": "GitHub"
+  },
+  "seamtype": {
+    "ko": "연구 소프트웨어",
+    "en": "Research software"
+  },
+  "seamtitle": {
+    "ko": "SEAM Studio",
+    "en": "SEAM Studio"
+  },
+  "seamdesc": {
+    "ko": "3D 장면의 시각 재질과 전파 재질을 따로 관리하고 재질 편집부터 Sionna RT 시뮬레이션 결과까지 한 화면에서 연결하는 디지털 트윈 작업 도구입니다.",
+    "en": "I built SEAM Studio to edit 3D scenes and inspect Sionna RT simulation results. Each mesh has separate visual and RF material settings."
+  },
+  "seamcaption": {
+    "ko": "SEAM Studio의 3D 장면 및 전파 분석 화면",
+    "en": "SEAM Studio with a 3D scene and radio analysis panels"
+  },
+  "caseStudy": {
+    "ko": "기여와 결과 자세히 보기",
+    "en": "Contribution & results"
+  },
+  "campusdh0": {
+    "ko": "나의 기여",
+    "en": "My contribution"
+  },
+  "campusdb0": {
+    "ko": "공간 데이터 처리와 3D 탐색 인터페이스, 모델 생성·검증 파이프라인을 설계했습니다. AI 에이전트의 건물 생성 과정에 자료 출처와 기하·규모 감사, 시각 검증 규칙을 적용했습니다.",
+    "en": "I designed the data-processing steps, 3D interface, and model-generation checks. For AI-generated buildings, I required source records, geometry and scale checks, and visual review."
+  },
+  "campusdh1": {
+    "ko": "구현과 최적화",
+    "en": "Implementation"
+  },
+  "campusdb1": {
+    "ko": "서울 보행 그래프의 3,680개 구간에 지형 경사를 반영했습니다. 2026년 9월 포트폴리오 기준 서울 GLB 팩은 meshopt 압축으로 140.7 MB에서 35.0 MB로 줄였습니다.",
+    "en": "The Seoul walking graph accounts for terrain slope across 3,680 edges. As of September 2026, meshopt compression reduced the Seoul GLB pack from 140.7 MB to 35.0 MB."
+  },
+  "campusdh2": {
+    "ko": "데이터 범위",
+    "en": "Data scope"
+  },
+  "campusdb2": {
+    "ko": "외부 공간 데이터와 모델을 활용하며 직접 수행한 데이터 처리와 애플리케이션 개발을 구분합니다. ERICA 보행 그래프에는 당시 경사가 반영되지 않았습니다.",
+    "en": "The map uses external spatial data and models. I worked on data processing, model-generation workflows, and the application. As of September 2026, ERICA walking routes did not account for slope."
+  },
+  "campuslink0": {
+    "ko": "웹 지도 열기",
+    "en": "Open live map"
+  },
+  "campustype": {
+    "ko": "공간 웹 애플리케이션",
+    "en": "Web application"
+  },
+  "campustitle": {
+    "ko": "한양대학교 캠퍼스 3D 지도",
+    "en": "Hanyang Campus 3D Map"
+  },
+  "campusdesc": {
+    "ko": "서울과 ERICA 캠퍼스를 웹에서 탐색하는 3D 지도입니다. 건물 검색과 정보 탐색, 서울캠퍼스의 경사를 반영한 길찾기를 구현했습니다.",
+    "en": "A browser-based 3D map of Hanyang's Seoul and ERICA campuses. Visitors can find buildings, read building information, and plan walking routes that account for slopes on the Seoul campus."
+  },
+  "campuscaption": {
+    "ko": "건물과 지형이 표시된 한양대학교 서울캠퍼스 3D 지도",
+    "en": "Seoul campus in the 3D map"
+  },
+  "trafficdh0": {
+    "ko": "나의 기여",
+    "en": "My contribution"
+  },
+  "trafficdb0": {
+    "ko": "데이터 촬영·라벨링, 탐지·추적 모델, 사고 판단, 관제 UI와 시스템 통합을 담당했습니다. FPGA 내부 신호등 제어는 팀원이 구현했습니다.",
+    "en": "I collected and labeled the data, worked on detection and tracking, and built the accident logic and monitoring UI. I also integrated the system; a teammate implemented the FPGA traffic-light controller."
+  },
+  "trafficdh1": {
+    "ko": "평가 결과",
+    "en": "Evaluation"
+  },
+  "trafficdb1": {
+    "ko": "6개 클래스, 13,248장의 데이터셋을 구축했습니다. 검증 mAP50–95는 0.717에서 0.932로 개선됐고 최종 테스트 mAP50–95는 0.940이었습니다. 시연 환경의 종단 간 지연은 약 3.7초였습니다.",
+    "en": "The dataset contains 13,248 images across six classes. Validation mAP50–95 improved from 0.717 to 0.932, and final test mAP50–95 was 0.940. End-to-end latency was approximately 3.7 seconds in the demonstration setup."
+  },
+  "trafficdh2": {
+    "ko": "응답 시간",
+    "en": "Latency"
+  },
+  "trafficdb2": {
+    "ko": "모델 추론 속도와 실제 시스템 응답 시간은 다릅니다. 시연에서는 영상 전송이 주요 지연 요인이었으며 결과는 축소 교차로 환경에서 측정했습니다.",
+    "en": "Video transmission accounted for most of the delay in our scale-model tests. Model inference time alone did not describe how quickly the full system responded."
+  },
+  "trafficlink0": {
+    "ko": "관제 UI 코드",
+    "en": "Dashboard code"
+  },
+  "traffictype": {
+    "ko": "졸업작품 · 3인 팀",
+    "en": "Capstone · Team of three"
+  },
+  "traffictitle": {
+    "ko": "드론 영상 기반 스마트 교통관리",
+    "en": "Drone-based Traffic Monitoring"
+  },
+  "trafficdesc": {
+    "ko": "드론 영상의 객체 탐지와 추적을 사고 판단, 관제 화면, 신호 연동으로 연결했습니다. 직접 촬영한 축소 교차로 데이터로 전체 시스템을 검증했습니다.",
+    "en": "Our team built a system that detects and tracks objects in drone video, identifies accidents, and sends traffic-signal commands. We tested it with footage of a scale-model intersection."
+  },
+  "trafficcaption": {
+    "ko": "드론 교통관리 실험에 사용한 축소 교차로와 신호등",
+    "en": "Scale-model intersection and traffic lights used for the drone traffic-monitoring experiment"
+  },
+  "soft0": {
+    "ko": "Claude와 Codex 사용량을 메뉴바와 위젯에서 확인하는 macOS 앱입니다.",
+    "en": "A macOS menu-bar app and floating widget that shows Claude and Codex usage."
+  },
+  "soft1": {
+    "ko": "단어·약어 검색과 개인 단어장을 연결한 메뉴바 앱 및 웹 서비스입니다.",
+    "en": "A menu-bar app and website for looking up words and abbreviations and keeping a personal wordbook."
+  },
+  "soft2": {
+    "ko": "공간 복원 자료의 출처와 검증 단계를 기록하는 재사용 가능한 에이전트 스킬입니다.",
+    "en": "An agent skill for reconstructing 3D spaces, recording source evidence, and checking the results."
+  },
+  "skip": {
+    "ko": "본문으로 바로가기",
+    "en": "Skip to content"
+  },
+  "brand": {
+    "ko": "이재우",
+    "en": "이재우"
+  },
+  "topLabel": {
+    "ko": "컴퓨터비전 · 디지털 트윈 · 소프트웨어",
+    "en": "Computer vision · Digital twins · Software"
+  },
+  "role": {
+    "ko": "한양대학교 WSL · 학부연구생",
+    "en": "Undergraduate researcher · Hanyang WSL"
+  },
+  "intro": {
+    "ko": "컴퓨터비전 기반<br>무선 디지털 트윈 연구",
+    "en": "Computer vision for<br>wireless digital twins."
+  },
+  "bio": {
+    "ko": "한양대학교 ERICA 전자공학부에서 공부하며 Wireless Systems Laboratory에서 연구하고 있습니다. 컴퓨터비전으로 실제 공간의 형상과 재질을 이해하고 이를 3D 편집 도구와 무선 시뮬레이션으로 연결합니다.",
+    "en": "I'm an Electronic Engineering undergraduate at Hanyang University ERICA and a researcher in the Wireless Systems Laboratory. My work uses computer vision to identify the geometry and materials of physical spaces for 3D editing and wireless simulation."
+  },
+  "explore": {
+    "ko": "연구 살펴보기",
+    "en": "Research"
+  },
+  "github": {
+    "ko": "GitHub",
+    "en": "GitHub"
+  },
+  "email": {
+    "ko": "이메일",
+    "en": "Email"
+  },
+  "research": {
+    "ko": "연구",
+    "en": "Research"
+  },
+  "firstAuthor": {
+    "ko": "제1저자 · 학술대회 발표",
+    "en": "First author · Conference presentation"
+  },
+  "paperDesc": {
+    "ko": "드론 사진에서 재질을 식별해 3D 메시의 삼각형에 할당하고 Sionna RT에서 재질이 채널 응답에 미치는 영향을 분석했습니다. SAM 2.1과 DINOv2 특징, 로지스틱 회귀를 결합합니다.",
+    "en": "We combined SAM 2.1, frozen DINOv2 features, and logistic regression to identify surface materials in UAV photographs. We assigned the predictions to mesh triangles and used Sionna RT to study how material assignments affect channel responses."
+  },
+  "metricPhotos": {
+    "ko": "수작업 라벨링 UAV 사진",
+    "en": "Hand-labeled UAV photos"
+  },
+  "metricSegments": {
+    "ko": "라벨 세그먼트",
+    "en": "Labeled segments"
+  },
+  "metricAccuracy": {
+    "ko": "5-fold balanced accuracy",
+    "en": "5-fold balanced accuracy"
+  },
+  "methodResults": {
+    "ko": "방법과 평가 범위",
+    "en": "Method & evaluation scope"
+  },
+  "paperLimit": {
+    "ko": "정확도는 세그먼트 단위 재질 분류에 대한 수치입니다. 28 GHz에서 재질을 구분한 장면과 단일 콘크리트 장면을 비교했으며 시뮬레이션 간 차이를 평가한 결과입니다. 실제 전파 측정 대비 정확도를 검증한 결과는 아닙니다.",
+    "en": "The 0.848 balanced accuracy is for segment-level material classification. At 28 GHz, we compared channel responses from a material-aware scene and a single-concrete scene. These are simulation comparisons; we have not validated them against radio measurements."
+  },
+  "paperPDF": {
+    "ko": "논문 PDF",
+    "en": "Paper PDF"
+  },
+  "posterPDF": {
+    "ko": "포스터 PDF",
+    "en": "Poster PDF"
+  },
+  "paperSoftware": {
+    "ko": "관련 소프트웨어",
+    "en": "Related software"
+  },
+  "work": {
+    "ko": "대표 프로젝트",
+    "en": "Selected projects"
+  },
+  "openSource": {
+    "ko": "그 밖의 소프트웨어",
+    "en": "Other software"
+  },
+  "background": {
+    "ko": "경력과 학력",
+    "en": "Background"
+  },
+  "present": {
+    "ko": "현재",
+    "en": "Present"
+  },
+  "lab": {
+    "ko": "한양대학교 · 학부연구생 · 지도교수 김선우",
+    "en": "Hanyang University · Undergraduate researcher · Advisor: Prof. Sunwoo Kim"
+  },
+  "university": {
+    "ko": "한양대학교 ERICA",
+    "en": "Hanyang University ERICA"
+  },
+  "degree": {
+    "ko": "전자공학부 학사 · 2027년 2월 졸업 예정",
+    "en": "B.S. in Electronic Engineering · Expected February 2027"
+  },
+  "previousUniversity": {
+    "ko": "한국교통대학교",
+    "en": "Korea National University of Transportation"
+  },
+  "previousDegree": {
+    "ko": "전자공학부 · 2학년 수료 후 편입",
+    "en": "Electronic Engineering · Completed two years before transferring"
+  },
+  "club": {
+    "ko": "전자공학부 드론 특화 학회 · 학회장 (2025.08–2026.08)",
+    "en": "Drone-focused student society · President (Aug 2025–Aug 2026)"
+  },
+  "toolbox": {
+    "ko": "사용하는 도구",
+    "en": "Tools I work with"
+  },
+  "contactHeading": {
+    "ko": "연락처",
+    "en": "Contact"
+  },
+  "backTop": {
+    "ko": "맨 위로",
+    "en": "Back to top"
+  },
+  "viewProject": {
+    "ko": "프로젝트 보기",
+    "en": "View project"
+  },
+  "seamTitle": {
+    "ko": "SEAM Studio",
+    "en": "SEAM Studio"
+  },
+  "seamSummary": {
+    "ko": "재질을 편집하고 전파 시뮬레이션을 확인하는 3D 작업 공간.",
+    "en": "A 3D workspace for assigning materials and inspecting radio simulations."
+  },
+  "seamKind": {
+    "ko": "3D 편집 · 연구 소프트웨어",
+    "en": "3D authoring · Research software"
+  },
+  "campusTitle": {
+    "ko": "한양대학교, 3D로",
+    "en": "Hanyang, in 3D"
+  },
+  "campusSummary": {
+    "ko": "두 캠퍼스의 건물 정보와 지형을 반영한 보행 경로를 웹에서.",
+    "en": "Two campuses, building information, and walking routes shaped by the terrain."
+  },
+  "campusKind": {
+    "ko": "공간 웹 · 3D 모델링",
+    "en": "Spatial web · 3D modelling"
+  },
+  "capstoneTitle": {
+    "ko": "교차로 위의 시선",
+    "en": "A view above the intersection"
+  },
+  "capstoneSummary": {
+    "ko": "드론 영상의 사고 판단부터 실제 신호등 모형 제어까지.",
+    "en": "Drone video, accident detection and a working traffic-light prototype."
+  },
+  "capstoneKind": {
+    "ko": "캡스톤 · 컴퓨터비전 · 3인 팀",
+    "en": "Capstone · Computer vision · Team of three"
+  },
+  "claudeusageTitle": {
+    "ko": "Claude + Codex Usage",
+    "en": "Claude + Codex Usage"
+  },
+  "claudeusageSummary": {
+    "ko": "사용량과 초기화 시간을 메뉴바와 위젯에서 한눈에.",
+    "en": "Usage limits and reset times, kept within reach in the menu bar."
+  },
+  "claudeusageKind": {
+    "ko": "macOS 앱 · SwiftUI · 오픈소스",
+    "en": "macOS app · SwiftUI · Open source"
+  },
+  "vocanoteTitle": {
+    "ko": "VocaNote",
+    "en": "VocaNote"
+  },
+  "vocanoteSummary": {
+    "ko": "논문을 읽다가 찾은 단어를 모으고 다시 익히는 도구.",
+    "en": "Look up a word, keep it, and return to it while reading papers."
+  },
+  "vocanoteKind": {
+    "ko": "macOS·웹 · 읽기 도구",
+    "en": "macOS & web · Reading tool"
+  },
+  "heroKicker": {
+    "ko": "이재우 · 연구와 소프트웨어",
+    "en": "Jaewoo Lee · Research & software"
+  },
+  "heroLocation": {
+    "ko": "한양대학교 WSL · 학부연구생",
+    "en": "Undergraduate researcher · Hanyang WSL"
+  },
+  "heroTitle": {
+    "ko": "공간을 연구하고,<br><em>소프트웨어를 만듭니다.</em>",
+    "en": "Computer vision.<br><em>Digital twins & software.</em>"
+  },
+  "selectedWork": {
+    "ko": "대표 작업",
+    "en": "Selected work"
+  },
+  "heroBio": {
+    "ko": "컴퓨터비전으로 공간의 형상과 재질을 연구합니다. 3D 편집 도구와 무선 디지털 트윈, 일상에서 쓰는 작은 앱을 만듭니다.",
+    "en": "I study the geometry and materials of physical spaces through computer vision. I build 3D tools, wireless digital twins, and small apps for everyday use."
+  },
+  "workCount": {
+    "ko": "프로젝트 5개 · 도구 1개",
+    "en": "Five projects & one toolkit"
+  },
+  "toolkitEyebrow": {
+    "ko": "오픈소스 · 에이전트 워크플로",
+    "en": "Open source · Agent workflow"
+  },
+  "toolkitDesc": {
+    "ko": "원본 자료에서 검토 가능한 3D 장면까지, 출처와 판단 근거를 남기는 에이전트 스킬.",
+    "en": "An agent skill for turning scans and photographs into 3D scenes, with a record of the evidence behind each decision."
+  },
+  "publication": {
+    "ko": "논문",
+    "en": "publication"
+  },
+  "paperCitation": {
+    "ko": "한국통신학회 하계종합학술발표회 논문집, 1942–1943쪽.",
+    "en": "KICS Summer Conference Proceedings, pp. 1942–1943."
+  },
+  "aboutLabel": {
+    "ko": "소개",
+    "en": "A little about me"
+  },
+  "aboutTitle": {
+    "ko": "이재우입니다.",
+    "en": "Hi, I’m Jaewoo."
+  },
+  "contactTitle": {
+    "ko": "이메일로 연락 주세요.",
+    "en": "Get in touch."
+  },
+  "footerLabel": {
+    "ko": "컴퓨터비전 · 디지털 트윈 · 소프트웨어",
+    "en": "Computer vision · Digital twins · Software"
+  },
+  "close": {
+    "ko": "닫기",
+    "en": "Close"
+  }
+}
